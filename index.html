@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1cb608260b.js" crossorigin="anonymous"></script>
+    <title>youtubehomepage</title>
+    <style>
+        .a1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .a2 {
+            margin-bottom: 19px;
+            display: inline-block;
+            height: 330px;
+            width: 320px;
+        }
+
+        .a2:hover {
+            cursor: pointer;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.301)),url() ;
+        }
+
+        .a3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0, 0.301)),url(data:image/png;base64,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);
+            background-size: 100% 100%;
+            display: inline-block;
+            position: relative;
+            bottom: 98px;
+            right: 160px;
+            border: 1px solid;
+            background-color: brown;
+            height: 15%;
+            width: 15%;
+            border-radius: 50%;
+
+        }
+
+        .atxt {
+            font-size: 15px;
+            position: relative;
+            left: 62px;
+            top: 11px;
+            display: inline-block;
+        }
+
+        .txt2 {
+            display: inline-block;
+            position: relative;
+            left: 61px;
+            top: 10px;
+        }
+
+        .txt3 {
+            position: relative;
+            bottom: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a1">
+        <div class="a2"><img src="imga1.PNG" alt="" width="320">
+            <div class="atxt"><b>CSS Tutorial: Media Queries Explained <br>
+                    | Web Development Tutorials #30</b></div>
+            <div class="txt2">
+                <p>CodeWithHarry <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga2.PNG" alt="" width="320">
+            <div class="atxt"><b>-Largest Oil Rig Manufacture and<br>
+                    Transport</b></div>
+            <div class="txt2">
+                <p>Transport <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>1.9M views • 1 month ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga3.PNG" alt="" width="320">
+            <div class="atxt"><b>FINALLY HAPPENED! NASA Capture<br>
+                    First SOUND of BLACKHOLE</b></div>
+            <div class="txt2">
+                <p>GetsetflySCIENCE <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga4.PNG" alt="" width="320">
+            <div class="atxt"><b>FULL FILM: McLaren Speedtail vs<br>
+                    F35 Fighter Jet | Top Gear</b></div>
+            <div class="txt2">
+                <p>TopGear <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>27M views • 3 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga5.PNG" alt="" width="320">
+            <div class="atxt"><b>Smooth Scroll and Nav menu in <br>
+                    HTML CSS JS only</b></div>
+            <div class="txt2">
+                <p>Online web ustaad <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga6.PNG" alt="" width="320">
+            <div class="atxt"><b>Web/App | Complete HTML in One<br>
+                    Video | HTML Crash Course</b></div>
+            <div class="txt2">
+                <p>SuffahComputer <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>374 views • 6 months ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga7.PNG" alt="" width="320">
+            <div class="atxt"><b>Reason Why People Fail<br>
+                    Learning To Code!</b></div>
+            <div class="txt2">
+                <p>CodeWithHarry <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga8.PNG" alt="" width="320">
+            <div class="atxt"><b>i My Dream Project is Finally Here<br>
+                    ! *Layers.shop*</b></div>
+            <div class="txt2">
+                <p>Tech Burner <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 23 hours ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga9.PNG" alt="" width="320">
+            <div class="atxt"><b>Experiment hydrolic press<br>
+                    lets see results</b></div>
+            <div class="txt2">
+                <p>NewAmericaCO <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga10.PNG" alt="" width="320">
+            <div class="atxt"><b>CSS Tutorial: Media Queries Explained <br>
+                    | Web Development Tutorials #30</b></div>
+            <div class="txt2">
+                <p>Ismal Kaleem <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>432K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga11.PNG" alt="" width="320">
+            <div class="atxt"><b>FINALLY HAPPENED! NASA Capture<br>
+                    First SOUND of BLACKHOLE</b></div>
+            <div class="txt2">
+                <p>GetsetflySCIENCE <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga12.PNG" alt="" width="320">
+            <div class="atxt"><b>Web/App | Complete HTML in One<br>
+                    |Video | HTML Crash Course
+                </b></div>
+            <div class="txt2">
+                <p>SuffahComputer <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>374 views • 6 months ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga13.PNG" alt="" width="320">
+            <div class="atxt"><b>-Largest Oil Rig Manufacture and<br>
+                    transport by UAE</b></div>
+            <div class="txt2">
+                <p>Transport <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>1.9M views • 1 month ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga14.PNG" alt="" width="320">
+            <div class="atxt"><b>Reason Why People Fail<br>
+                    Learning To Code!</b></div>
+            <div class="txt2">
+                <p>CodeWithHarry <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 2 years ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+        <div class="a2"><img src="imga15.PNG" alt="" width="320">
+            <div class="atxt"><b>1 My Dream Project is Finally Here<br>
+                    ! *Layers.shop*</b></div>
+            <div class="txt2">
+                <p>Tech Burner <i class="fa-solid fa-circle-check"></i></p>
+                <div class="txt3">
+                    <p>433K views • 23 hours ago</p>
+                </div>
+            </div>
+            <div class="a3"><img src="" alt=""></div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
